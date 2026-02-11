@@ -1,6 +1,5 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "main": "./src/worker/index.ts",
   "name": "omnidev",
   "vars": {
   },
@@ -13,9 +12,6 @@
     "nodejs_compat"
   ],
   "pages_build_output_dir": "dist",
- "assets": {
-    "not_found_handling": "single-page-application"
-  },
   "d1_databases": [
     {
       "binding": "DB",
