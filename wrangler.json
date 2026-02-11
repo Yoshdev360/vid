@@ -1,27 +1,26 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "019aeb72-c8d3-798f-a869-cbd86ceaeee9",
   "main": "./src/worker/index.ts",
-  "compatibility_date": "2025-06-17",
-  "compatibility_flags": ["nodejs_compat"],
+  "name": "omnidev",
+  "vars": {
+  },
   "observability": {
     "enabled": true
   },
   "upload_source_maps": true,
-  "assets": {
+  "compatibility_date": "2025-06-17",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "pages_build_output_dir": "dist",
+ "assets": {
     "not_found_handling": "single-page-application"
   },
   "d1_databases": [
     {
       "binding": "DB",
-      "database_name": "019aeb72-c8d3-798f-a869-cbd86ceaeee9",
-      "database_id": "019aeb72-c8d3-798f-a869-cbd86ceaeee9"
-    }
-  ],
-  "r2_buckets": [
-    {
-      "binding": "R2_BUCKET",
-      "bucket_name": "019aeb72-c8d3-798f-a869-cbd86ceaeee9"
+      "database_name": "vid-db",
+      "database_id": "e906500c-0cf0-4f48-9303-2603feb9e846"
     }
   ]
 }
