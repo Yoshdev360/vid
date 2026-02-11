@@ -4,5 +4,15 @@
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" },
     { "path": "./tsconfig.worker.json" }
-  ]
+  ],
+
+   
+  "compilerOptions": {
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+  // ... resto de tu config
+  "types": ["@cloudflare/workers-types", "vite/client"], // <-- AGREGA ESTA LÍNEA
+}
 }
